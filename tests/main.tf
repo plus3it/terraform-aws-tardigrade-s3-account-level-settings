@@ -10,5 +10,4 @@ module "create_settings" {
   }
 }
 
-
 data "aws_caller_identity" "current" {}
