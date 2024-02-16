@@ -1,4 +1,4 @@
-# terraform-aws-tardigrade-s3-account-level-settings
+# terraform-aws-tardigrade-s3-account
 generic module to manage s3 account level settings
 
 
