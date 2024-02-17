@@ -1,10 +1,12 @@
-variable "s3_account_settings" {
-  description = "Object of inputs for S3 account settings"
+variable "s3_account" {
+  description = "Object of inputs for S3 account-level settings"
   type = object({
-    account_id              = optional(string)
-    block_public_acls       = optional(bool)
-    block_public_policy     = optional(bool)
-    ignore_public_acls      = optional(bool)
-    restrict_public_buckets = optional(bool)
+    public_access_block = optional(object({
+      account_id              = optional(string)
+      block_public_acls       = optional(bool, true)
+      block_public_policy     = optional(bool, true)
+      ignore_public_acls      = optional(bool, true)
+      restrict_public_buckets = optional(bool, true)
+    }), {})
   })
 }
