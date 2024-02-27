@@ -1,5 +1,5 @@
 module "create_settings" {
-  source = "../"
+  source = "../.."
 
   s3_account = {
     public_access_block = {
