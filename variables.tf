@@ -9,4 +9,6 @@ variable "s3_account" {
       restrict_public_buckets = optional(bool, true)
     }), {})
   })
+  default  = {}
+  nullable = false
 }

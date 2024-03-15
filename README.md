@@ -23,7 +23,7 @@ No requirements.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_s3_account"></a> [s3\_account](#input\_s3\_account) | Object of inputs for S3 account-level settings | <pre>object({<br>    public_access_block = optional(object({<br>      account_id              = optional(string)<br>      block_public_acls       = optional(bool, true)<br>      block_public_policy     = optional(bool, true)<br>      ignore_public_acls      = optional(bool, true)<br>      restrict_public_buckets = optional(bool, true)<br>    }), {})<br>  })</pre> | n/a | yes |
+| <a name="input_s3_account"></a> [s3\_account](#input\_s3\_account) | Object of inputs for S3 account-level settings | <pre>object({<br>    public_access_block = optional(object({<br>      account_id              = optional(string)<br>      block_public_acls       = optional(bool, true)<br>      block_public_policy     = optional(bool, true)<br>      ignore_public_acls      = optional(bool, true)<br>      restrict_public_buckets = optional(bool, true)<br>    }), {})<br>  })</pre> | `{}` | no |
 
 ## Outputs
 
